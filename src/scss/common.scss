@@ -1,0 +1,29 @@
+// Заголовки, общие БЄМ блоки и проче...
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+}
+
+.section-title {
+	margin: 0;
+	font-style: normal;
+	font-weight: 700;
+	@include adaptiveValue("font-size", 50, 25);
+	line-height: 1.2;
+	color: $dark-text-color;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: rem(40);
+}
+
+
+section {
+    padding: rem(50) 0;
+}
+

@@ -1,0 +1,24 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	padding: rem(20);
+	background-color: $brand-color;
+	font-size: rem(22);
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $brand-color-hover;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+
+.show-more__button {
+	text-align: center;
+}

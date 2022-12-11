@@ -1,0 +1,55 @@
+.hero {
+	@include adaptiveValue("padding-top", 250, 80);
+    padding-bottom: 50px;
+    background-color: var(--main-bg-color);
+
+    // .hero__container
+
+    &__container {
+      display: flex;
+    //   flex-wrap: wrap;
+    }
+
+    // .hero__content
+
+    &__content {
+      flex: 0 1 64%;
+    }
+
+    // .hero__title
+
+    &__title {
+      margin: 0;
+      margin-bottom: 50px;
+      font-weight: 600;
+      @include adaptiveValue("font-size", 80, 36);
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--dark-color);
+    }
+
+    // .hero__title-text
+
+    &__title-text {
+      display: block;
+      // max-width: 90%;
+      font-weight: 400;
+      @include adaptiveValue("font-size", 18, 14);
+      line-height: 1.4;
+      text-transform: initial;
+      margin-bottom: 50px;
+    }
+
+    // .hero__link
+
+    &__link {
+    }
+
+    &__img {
+      flex: 0 0 auto;
+    }
+  }
+  .container {
+  }
+  .btn {
+  }
